@@ -1,8 +1,10 @@
-# PWCHANGESYNC
+# pwchange-synced
 
 ## Not production ready in any way whatsoever
 
-Want your encypted boot password and your user account password synced on Ubuntu (and probably other distros)? This does that.
+| Want your encypted boot password and your user account password synced on Ubuntu (and probably other distros)? This does that.  |
+|---------------------------------------------------------------------------------------------------------------------------------|
+
 
 It's a normal(ish) password change tool that attempts to reset the LUKS disk encryption and user password at the same time to ensure they stay in sync. This is intended mostly for devices that have only one user or a primary user and want that user's password to both unlock the LUKS disk encryption and be that user's login password.
 
@@ -21,3 +23,5 @@ Variables I would want to verify if attempting to use this on another system inc
 1. The `openssl` component behaves as expoected to validate the user password
 
 1. The script can correctly identify the correct disk device
+
+
