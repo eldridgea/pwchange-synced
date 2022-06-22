@@ -4,7 +4,7 @@
 | :exclamation:   not production ready in any way whatsoever :exclamation: |
 |-------------------------------------------------------------|
 
-Use this instead of the normal `passwd` tool going forward and it should update your LUKS and user passwords simultaneously.
+Use this instead of the normal `passwd` tool going forward and it should update your LUKS and user passwords simultaneously. That way you only have one password for both your boot and login. 
 
 It's a normal(ish) password change tool that attempts to reset the LUKS disk encryption and user password at the same time to ensure they stay in sync. This is intended mostly for devices that have only one user or a primary user and want that user's password to both unlock the LUKS disk encryption and be that user's login password.
 
