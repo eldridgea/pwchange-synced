@@ -1,6 +1,5 @@
 # pwchange-synced
-### Want your LUKS boot password and user password to stay synced? This does that.
-
+### Password change tool which updates both LUKS and user passwords simultaneously
 
 | :exclamation:   not production ready in any way whatsoever :exclamation: |
 |-------------------------------------------------------------|
