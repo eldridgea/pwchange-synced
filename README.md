@@ -1,11 +1,10 @@
 # pwchange-synced
 
-| :exclamation:   Not production ready in any way whatsoever  |
+| :exclamation:   Not production ready in any way whatsoever exclamation: |
 |-------------------------------------------------------------|
  
 
-### Want your LUKS boot password and user password to stay synced? 
-### This does that.
+### Want your LUKS boot password and user password to stay synced? This does that.
 
 Use this instead of the normal `passwd` tool going forward and it should update your LUKS and user passwords simultaneously.
 
