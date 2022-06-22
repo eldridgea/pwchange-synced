@@ -1,6 +1,8 @@
 # pwchange-synced
 
-## Not production ready in any way whatsoever
+| :exclamation:   Not production ready in any way whatsoever  |
+|-------------------------------------------------------------|
+ 
 
 | Want your encypted boot password and your user account password synced on Ubuntu (and probably other distros)? This does that.  |
 |---------------------------------------------------------------------------------------------------------------------------------|
