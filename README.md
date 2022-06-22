@@ -12,7 +12,7 @@ Run this tool as the user you want to have the synced passwords
 
 This tool expects passwords to already be the same so if they're not make them the same manually before using this tool.
 
-I only have my mnachine to test on but this works on my Dell XPS 2022 with Ubuntu 20.04. I _believe_ this should work on any Linux system with one bootable system that's Linux, usees systemd, and encrypts the disk with LUKS. This is the default for most modern distros including Ubuntu so if you used the instalation wizard when installing or configfurtig your OS this will proably work for you.
+I only have my machine to test on but this works on my Dell XPS 2022 with Ubuntu 20.04. I _believe_ this should work on any Linux system with one bootable system that's Linux, usees systemd, and encrypts the disk with LUKS. This is the default for most modern distros including Ubuntu so if you used the instalation wizard when installing or configfurtig your OS this will proably work for you.
 
 ### Notes
 
