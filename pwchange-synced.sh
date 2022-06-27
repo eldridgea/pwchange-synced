@@ -46,7 +46,7 @@ fi
 
 #====================================================================================
 #    ATTEMPTS TO SET LUKS PASSWORD
-luks_device=$(lsblk -fs -p -o NAME,FSTYPE,NAME | egrep -m 1 crypto_LUKS | rev | cut -d ' ' -f1 | rev)
+luks_device=$(lsblk -fs -p -o NAME,FSTYPE,NAME | grep -m 1 crypto_LUKS | rev | cut -d ' ' -f1 | rev)
 printf '\nAttempting to set LUKS password. (This step may take about 30 seconds). . .'
 printf '%s\n' "$old_password" "$new_password" "$new_password" | sudo cryptsetup luksChangeKey $luks_device >/dev/null 2>&1 &
 pid=$(echo $!)
