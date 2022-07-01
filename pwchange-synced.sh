@@ -14,7 +14,7 @@ sudo -v
 
 #====================================================================================
 #    SETS VARS FROM SHADOWFILE
-shadow_info=$(sudo cat /etc/shadow | grep $USER)
+shadow_info=$(sudo getent shadow $USER)
 salt=$(echo $shadow_info | cut -d '$' -f 3)
 algorithm=$(echo $shadow_info | cut -d '$' -f 2)
 shadowfile_hash="$"$(echo $shadow_info | cut -d '$' -f 2- | cut -d ':' -f 1)
