@@ -14,9 +14,10 @@ sudo -v
 
 #====================================================================================
 #    SETS VARS FROM SHADOWFILE
-salt=$(sudo cat /etc/shadow | grep $USER | cut -d '$' -f 3)
-algorithm=$(sudo cat /etc/shadow | grep $USER | cut -d '$' -f 2)
-shadowfile_hash="$"$(sudo cat /etc/shadow | grep $USER | cut -d '$' -f 2- | cut -d ':' -f 1)
+shadow_info=$(sudo cat /etc/shadow | grep $USER)
+salt=$(echo $shadow_info | cut -d '$' -f 3)
+algorithm=$(echo $shadow_info | cut -d '$' -f 2)
+shadowfile_hash="$"$(echo $shadow_info | cut -d '$' -f 2- | cut -d ':' -f 1)
 
 #====================================================================================
 #    GETS OLD PASSWORD FROM INPUT, HASH IT, VALIDATE IT AGAINST SHADOWFILE
